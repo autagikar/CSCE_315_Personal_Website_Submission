@@ -1,0 +1,67 @@
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Create a header with a background image */
+header {
+    background-size: cover;
+    text-align: center;
+    color: black;
+    padding: 50px 0;
+}
+
+/* Style the header text */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Create a navigation bar */
+nav {
+    background-color: #460404;
+}
+
+ul.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+li.nav-item {
+    margin-right: 20px;
+}
+
+a.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Create a section for your image */
+.image-section {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Style your image */
+img {
+    max-width: 70%;
+    height: 500px;
+}
+
+/* Create a section for your text */
+.text-section {
+    padding: 40px;
+    text-align: center;
+}
