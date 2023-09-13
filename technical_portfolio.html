@@ -2,29 +2,95 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" id="mainStyleSheet">
+    <script src="functions.js"></script>
     <title>Technical Projects</title>
 </head>
 <body>
-    <h1>Technical Projects</h1>
 
-    <div class="project">
-        <h2>Simulated Y-86 CPU</h2>
-        <p>Worked in a team to create a CPU using Logisim Evolution to perform custom-made Y-86 assembly instructions
-            including bubble sort.</p>
-    </div>
-
-    <div class="project">
-        <h2>Simple Compression Software</h2>
-        <p>Developed a simple C++ console application to compress images to smaller bit sizes. Used seam picking and seam carving algorithms along with dynamic allocation to reduce matrix sizes to smaller
-            dimensions.</p>
-    </div>
-
-    <nav>
-        <ul class="navbar">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+    <header>
+        <nav>
+          <ul class="navbar">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="technical_portfolio.html" class="nav-link">Technical Portfolio</a></li>
+            <li class="nav-item"><a href="qualifications.html" class="nav-link">Qualifications</a></li>
+            <li class="nav-item"><a href="service.html" class="nav-link">Service</a></li>
+            <li class="nav-item"><a href="hobbies.html" class="nav-link">Hobbies - AI Generated</a></li>
+            <a href="https://www.tamu.edu/index.html"> 
+                <li class="logo">
+                    <img src="src/logo.png" alt="Logo">
+                </li>
+            </a>          
         </ul>
-    </nav>
+        </nav>
+      </header>
+
+    <div class="content">
+        <h1>Technical Projects</h1>
+
+        <div class="container">
+            <!-- First section with an image -->
+            <section>
+                <a href="https://www.ercot.com/">
+                    <img src="src/ercot.png" alt="Ercot Picture" class="portfoliopic">
+                </a>
+                <p>Click on the picture for a link!</p>
+            </section>
+      
+            <!-- Second section with text content -->
+            <section>
+                <h2>Fullstack Logging Tool</h2>
+                <p>Developed a full-stack web application using ASP.NET Core and Vue.js frameworks to parse, store, and display log
+                    files sent from ERCOT, used REST API Connections to fetch and display data on an internal network webpage.
+                    Included functionality for formatted .csv files with parsed ERCOT data and frontend integration with Vuetify 3 for
+                    extra GUI features. </p>
+                <p> Used ASP.NET Core 6.0 to develp a C# backend. The backend was responsible for finding data log files stored in a specified folder, parsed all the data within the log files, and stored these files in a data structure (C# Dictionary) within the backend itself. Designed API Controllers to help facillitate Http[Get], Http[Post], and Http[Get["id"], API calls.</p>
+                <p> Vue.js was used as a Javascript Framework for the frontend webpage. The Vue.js project was responsible for handling Http[Get], Http[Post], and Http[Get["id"] API calls on the frontend side. Displaying data for Http[Get] and sending data to the C# backend when an Http[Post] is called. The frontend uses a package on the top of the Vue.js framework called 
+                    Vuetify 3 to create Google Material Design Style Components.
+                </p>
+                <p> Overall, developed a CRUD application to store and display ERCOT logs using ASP.NET Core 6.0, Vue.js, and RESTful API connections.
+
+                </p>
+            </section>
+          </div>
+
+          <div class="container">
+            <!-- First section with an image -->
+            <section>
+                <img src="src/cpuwhole.png" alt="Cpu Picture" class="small-image">
+            </section>
+      
+            <!-- Second section with text content -->
+            <section>
+                <h2>Simulated Y-86 CPU</h2>
+                <p>Worked in a team to create a CPU using Logisim Evolution to perform custom-made Y-86 assembly instructions including bubble sort.</p>
+                <p>Individually Desgined the Register and Fetch Components. The register component is responsible for temporary storage of values during a CPU's execution. 
+                    The fetch component was responsible for reciving an instruction code as an input, and seperating the instruction code into chunks of bytes the CPU understands how to use.</p>
+                <p>Collaborated with teammates to assemble our Main CPU together, combining all individual components (fetch, decode, execute, write back, etc). After all components were assembled, our group 
+                    developed Y-86 assembly code that was functional and able to run small processes including bubble sort.
+                </p>
+                <p><a href="https://github.com/autagikar/y86-cpu-processor">Github</a></p>
+            </section>
+          </div>
+
+        <div class="butLogic">
+            <button onclick="toggleStyleSheet()" type="button">Toggle Style</button>
+            <script src="functions.js"></script>
+        </div>
+
+    </div>
+
+    
+  
+
+    <nav class="footnote">
+        <ul>
+          <li><a href="https://github.com/autagikar" target="_blank">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/anirudh-u-640437223/" target="_blank">Linkedin</a></li>
+          <li><a href="https://www.instagram.com/a.utagikar/" target="_blank">Instagram</a></li>
+          <li><a href="https://twitter.com/utag_a6" target="_blank">Twitter</a></li>
+        </ul>
+      </nav>
 
 </body>
 </html>

@@ -2,45 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" id="mainStyleSheet">
+    <script src="functions.js"></script>
     <title>Qualifications</title>
 </head>
 <body>
-    <h1>Qualifications</h1>
 
-    <div>
-        <h2>My Resume:</h2>
-        <iframe src="resume.pdf" width="100%" height="600px"></iframe>
+    <header>
+        <nav>
+          <ul class="navbar">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="technical_portfolio.html" class="nav-link">Technical Portfolio</a></li>
+            <li class="nav-item"><a href="qualifications.html" class="nav-link">Qualifications</a></li>
+            <li class="nav-item"><a href="service.html" class="nav-link">Service</a></li>
+            <li class="nav-item"><a href="hobbies.html" class="nav-link">Hobbies - AI Generated</a></li>
+            <a href="https://www.tamu.edu/index.html"> 
+                <li class="logo">
+                    <img src="src/logo.png" alt="Logo">
+                </li>
+            </a>          
+        </ul>
+        </nav>
+      </header>
+
+    <div class="content">
+        <h1 class="sublinkTitle">Qualifications</h1>
+        <div class="resumepic">
+            <h2><a href="https://drive.google.com/file/d/1kk-WhaJe0vABsVKfgJXgsDg5BvIH_e2v/view?usp=sharing">My Resume</a></h2>
+            <img src="src/resume.png" alt="Logo">       
+        </div>
+        <div>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>
+                    <h3>Programming Languages:</h3>
+                    <p>Java, Python, C++, JavaScript, C#</p>
+                </li>
+                <li>
+                    <h3>Web Development:</h3>
+                    <p>HTML, CSS, Vue, Node.js</p>
+                </li>
+                <li>
+                    <h3>Database Management:</h3>
+                    <p>SQL</p>
+                </li>
+                <li>
+                    <h3>Version Control:</h3>
+                    <p>Git, SVN</p>
+                </li>
+            </ul>
+        </div>
+        <div class="butLogic">
+            <button onclick="toggleStyleSheet()" type="button">Toggle Style</button>
+            <script src="functions.js"></script>
+        </div>
     </div>
 
-    <div>
-        <h2>Technical Skills</h2>
+    
+  
+
+    <nav class="footnote">
         <ul>
-            <li>
-                <h3>Programming Languages</h3>
-                <p>Java, Python, C++, JavaScript, C#</p>
-            </li>
-            <li>
-                <h3>Web Development</h3>
-                <p>HTML, CSS, Vue, Node.js</p>
-            </li>
-            <li>
-                <h3>Database Management</h3>
-                <p>SQL</p>
-            </li>
-            <li>
-                <h3>Version Control</h3>
-                <p>Git, SVN</p>
-            </li>
+          <li><a href="https://github.com/autagikar" target="_blank">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/anirudh-u-640437223/" target="_blank">Linkedin</a></li>
+          <li><a href="https://www.instagram.com/a.utagikar/" target="_blank">Instagram</a></li>
+          <li><a href="https://twitter.com/utag_a6" target="_blank">Twitter</a></li>
         </ul>
-    </div>
-
-    <nav>
-        <ul class="navbar">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-        </ul>
-    </nav>
+      </nav>
 
 
 </body>
 </html>
+

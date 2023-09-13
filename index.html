@@ -3,36 +3,70 @@
 <head>
   <title>Anirudh Utagikar</title>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" id="mainStyleSheet">
+  <script src="functions.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1>Anirudh Utagikar</h1>
-    <p>Welcome to my Personal Website!</p>
-  </header>
 
-  <nav>
+  <header>
+    <nav>
       <ul class="navbar">
         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="technical_portfolio.html" class="nav-link">Technical Portfolio</a></li>
         <li class="nav-item"><a href="qualifications.html" class="nav-link">Qualifications</a></li>
         <li class="nav-item"><a href="service.html" class="nav-link">Service</a></li>
-        <li class="nav-item"><a href="hobbies.html" class="nav-link">Hobbies</a></li>
+        <li class="nav-item"><a href="hobbies.html" class="nav-link">Hobbies - AI Generated</a></li>
+        <a href="https://www.tamu.edu/index.html"> 
+          <li class="logo">
+              <img src="src/logo.png" alt="Logo">
+          </li>
+      </a>
       </ul>
-  </nav>
+    </nav>
+  </header>
 
-  <div class="image-section">
-      <img src="me.jpg" alt="Anirudh Utagikar Image">
-  </div>
+  <div class="content">
+  
+    <h1>Anirudh Utagikar</h1>
+    <p>Welcome to my Personal Website!</p>
 
-  <div class="text-section" id="about">
-      <h2>About Me</h2>
-      <p>Hi! My name is Anirudh Utagikar and I am currently a junior Computer Science major at Texas A&M. Welcome to my personal webpage, there is all sorts of information pertaining
-        to my professional career as well as some personal information about me. Other than school, I love to stay active and stay outdoors when the Texas heat isn't super bad. I am originally from
-        Austin, Texas and I have a yellow lab back at home named Stryker. 
-      </p>
-  </div>
+  <hr>
+
+    <!-- Parent container to hold the sections side by side -->
+    <div class="container">
+      <!-- First section with an image -->
+      <section>
+          <img src="src/me.JPG" alt="Anirudh Utagikar Image" class="small-image">
+      </section>
+
+      <!-- Second section with text content -->
+      <section>
+          <h2>About Me</h2>
+          <p>Greetings! I'm Anirudh Utagikar, a passionate junior pursuing a degree in Computer Science and a member of the Fightin' Texas Aggie Class of '25. 
+            As you go thrugh this webpage, you'll find a treasure trove of insights into my professional journey and a glimpse into the facets of my life beyond work.
+          </p>
+          <p>Although my academic pursuits fuel my drive, I'm not just a computer science enthusiastic - I also love the great outdoors when the Texas sun decides to cut us
+             some slack. I love taking out my dog around the city to swim and hike, as well as playing tennis and basketball. </p>
+      </section>
+    </div>
+  
+    
+    <div class="butLogic">
+      <button onclick="toggleStyleSheet()" type="button">Toggle Style</button>
+    </div>
+
+</div>
+
+<nav class="footnote">
+  <ul>
+    <li><a href="https://github.com/autagikar" target="_blank">Github</a></li>
+    <li><a href="https://www.linkedin.com/in/anirudh-u-640437223/" target="_blank">Linkedin</a></li>
+    <li><a href="https://www.instagram.com/a.utagikar/" target="_blank">Instagram</a></li>
+    <li><a href="https://twitter.com/utag_a6" target="_blank">Twitter</a></li>
+  </ul>
+</nav>
+
 
 </body>
 </html>
